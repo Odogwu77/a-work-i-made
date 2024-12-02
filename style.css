@@ -1,0 +1,549 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  background-color: beige;
+}
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* navigations starts */
+/* i did a change here  */
+/* Header styles */
+header {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3498db;
+}
+
+/* i worked on here 
+
+you didnt do it properly 
+observe the code*/
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+}
+/* look at here too */
+.cont-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cont-text h1 {
+  font-size: 60px;
+  color: #fff;
+}
+
+.cont-text p {
+  color: #fff;
+  font-size: 23px;
+  margin-top: 17px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cont-text a {
+  text-decoration: none;
+  padding: 10px;
+  color: #3498db;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+/* //added the media query */
+@media screen and (max-width: 901px) {
+  .cont-text h1 {
+    font-size: 30px;
+  }
+  .cont-text p {
+    font-size: 18px;
+  }
+}
+
+/* let's work on this */
+/* fix this, */
+/* it's not responsive */
+.service {
+  margin-top: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-text {
+  width: 12%;
+  height: 40px;
+  text-align: center;
+}
+
+.service-text h3 {
+  font-size: 24px;
+}
+
+.doc {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  background-color: rgb(243, 243, 248);
+  gap: 20px;
+}
+
+.doctor1,
+.doctor2,
+.doctor3 {
+  width: 400px;
+  height: 185px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.doctor1:hover {
+  background-color: #3498db;
+  color: #fff;
+  transition: all 1s ease;
+}
+.doctor2:hover {
+  background-color: #3498db;
+  color: #fff;
+  transition: all 1s ease;
+}
+.doctor3:hover {
+  background-color: #3498db;
+  color: #fff;
+  transition: all 1s ease;
+}
+
+.doc-num1:hover {
+  background-color: #3498db;
+  color: #fff;
+  transition: all 1s ease;
+}
+.doc-num2:hover {
+  background-color: #3498db;
+  color: #fff;
+  transition: all 1s ease;
+}
+.doc-num3:hover {
+  background-color: #3498db;
+  color: #fff;
+  transition: all 1s ease;
+}
+
+.doc-num4:hover {
+  background-color: #3498db;
+  color: #fff;
+  transition: all 1s ease;
+}
+
+.doc-box1 img {
+  width: 70px;
+  height: 40px;
+}
+
+.doc-box2 img {
+  width: 70px;
+  height: 40px;
+}
+
+.doc-box3 img {
+  width: 70px;
+  height: 40px;
+}
+
+.doc-box1,
+.doc-box2,
+.doc-box3 {
+  width: 80px;
+  height: 45px;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+
+.doctor1 h3 {
+  padding-top: 20px;
+}
+.doctor2 h3 {
+  padding-top: 20px;
+}
+.doctor3 h3 {
+  padding-top: 20px;
+}
+
+.doctor1 p {
+  padding-top: 13px;
+}
+
+.doctor2 p {
+  padding-top: 13px;
+}
+
+.doctor3 p {
+  padding-top: 13px;
+}
+
+.our-doc {
+  width: 100%;
+  height: 8vh;
+  justify-content: center;
+  display: flex;
+}
+
+.our-text {
+  width: 12%;
+  height: 40px;
+  text-align: center;
+}
+
+.our-text h3 {
+  font-size: 24px;
+}
+
+.doc-list {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.doc-num1,
+.doc-num2,
+.doc-num3,
+.doc-num4 {
+  width: 24%;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.doc-num1 h3 {
+  margin-top: 15px;
+}
+.doc-num2 h3 {
+  margin-top: 15px;
+}
+.doc-num3 h3 {
+  margin-top: 15px;
+}
+.doc-num4 h3 {
+  margin-top: 15px;
+}
+
+.doc-num1 p {
+  margin-top: 10px;
+}
+.doc-num2 p {
+  margin-top: 10px;
+}
+.doc-num3 p {
+  margin-top: 10px;
+}
+.doc-num4 p {
+  margin-top: 10px;
+}
+
+.doc-abriv1,
+.doc-abriv2,
+.doc-abriv3,
+.doc-abriv4 {
+  width: 50%;
+  height: 150px;
+  background-color: rgb(214, 212, 212);
+  margin: 0px auto;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.doc-abriv1 h1 {
+  padding-top: 14%;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.doc-abriv2 h1 {
+  padding-top: 14%;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.doc-abriv3 h1 {
+  padding-top: 14%;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.doc-abriv4 h1 {
+  padding-top: 14%;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.patient {
+  width: 100%;
+  height: 360px;
+}
+
+.test {
+  width: 25%;
+  height: 60px;
+  margin: 0px auto;
+}
+
+.test h3 {
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cont {
+  width: 48%;
+  height: 200px;
+  margin: 0px auto;
+  margin-top: 38px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.star-cont {
+  width: 28%;
+  height: 40px;
+  border: 2px solid green;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+.cont p {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cont a {
+  color: #0e4163;
+  text-decoration: none;
+  margin-left: 41%;
+}
+.an {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+  height: 120vh; /* Make it full height */
+}
+
+.book {
+  margin-bottom: 20px;
+  width: 30%;
+  height: 77px;
+}
+
+.book h3 {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px; /* Limit max width for large screens */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add some shadow */
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block; /* Ensures labels stack */
+}
+
+input,
+textarea {
+  width: 100%; /* Full width */
+  height: 36px; /* Consistent height */
+  margin-bottom: 15px;
+  padding: 8px; /* Padding for better usability */
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 40px; /* Consistent button height */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.form textarea {
+  height: 200px; /* Keep this height */
+}
+
+@media (max-width: 600px) {
+  /* Responsive styles */
+  .form {
+    width: 90%; /* Full width on smaller screens */
+    padding: 15px; /* Adjust padding */
+  }
+
+  input {
+    height: 45px; /* Slightly larger inputs on mobile */
+  }
+}
+footer {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+}
+
+footer p {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 901px) {
+  .nav-links {
+    display: none;
+  }
+
+  .service-text {
+    width: 40%;
+  }
+
+  .doc {
+    height: 110vh;
+    width: 87%;
+    margin-left: 45px;
+    display: inline-block;
+  }
+
+  .doctor1,
+  .doctor2,
+  .doctor3 {
+    margin-top: 17px;
+  }
+
+  .our-text {
+    width: 40%;
+  }
+
+  .doc-list {
+    height: 210vh;
+    width: 87%;
+    margin-left: 45px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .doc-num1,
+  .doc-num2,
+  .doc-num3,
+  .doc-num4 {
+    width: 100%;
+    margin-top: 17px;
+  }
+
+  .test {
+    width: 80%;
+  }
+
+  .cont {
+    width: 90%;
+    height: 230px;
+  }
+
+  .cont a {
+    margin-left: 36%;
+  }
+
+  .star-cont {
+    width: 50%;
+  }
+
+  .book {
+    width: 90%;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  * input {
+    width: 370px;
+  }
+
+  .form textarea {
+    width: 370px;
+  }
+}

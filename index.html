@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Landing Page</title>
+    <!-- always link properly in html  -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- navigation starts -->
+    <header>
+      <nav>
+        <!-- logo -->
+        <div class="logo">HealthCare Plus</div>
+        <!-- end logo -->
+        <ul class="nav-links">
+          <!-- nav links starts -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- end links -->
+      </nav>
+      <!-- end nav -->
+    </header>
+    <!-- hero section starts -->
+    <div class="section">
+      <div class="cont-text">
+        <h1>Welcome To HealthCare Plus</h1>
+        <p>
+          Your health is our top priority. Experience World-class Medical Care.
+        </p>
+
+        <a href="">Back an Appointment</a>
+      </div>
+    </div>
+
+    <!-- start services -->
+    <!-- fix it, it is not reposnive -->
+    <div class="service">
+      <div class="service-text">
+        <h3>Our Service</h3>
+      </div>
+      <div class="doc">
+        <div class="doctor1">
+          <div class="doc-box1">
+            <img src="/doctor-svgrepo-com.svg" alt="" />
+          </div>
+          <h3>General medicine</h3>
+          <p>
+            Comprehensive care for a wide range of <br />
+            medical condition
+          </p>
+        </div>
+        <div class="doctor2">
+          <div class="doc-box2">
+            <img src="/heart-svgrepo-com.svg" alt="" />
+          </div>
+          <h3>Cardiology</h3>
+          <p>
+            Expert care for heart-related issues and <br />
+            condition
+          </p>
+        </div>
+        <div class="doctor3">
+          <div class="doc-box3">
+            <img src="/head-towel-svgrepo-com (1).svg" alt="" />
+          </div>
+          <h3>pediatrics</h3>
+          <p>
+            Specialized medical care for infants, <br />
+            children and adolescent
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- end services -->
+
+    <!-- start doctors -->
+
+    <div class="our-doc">
+      <div class="our-text">
+        <h3>Our Doctor</h3>
+      </div>
+    </div>
+
+    <!-- doctor list starts -->
+    <div class="doc-list">
+      <div class="doc-num1">
+        <div class="doc-abriv1">
+          <h1>JD</h1>
+        </div>
+        <h3>Dr. John Doe</h3>
+        <p>General Medicine</p>
+      </div>
+      <div class="doc-num2">
+        <div class="doc-abriv2">
+          <h1>JS</h1>
+        </div>
+        <h3>Dr. Jane Smith</h3>
+        <p>Cardiology</p>
+      </div>
+      <div class="doc-num3">
+        <div class="doc-abriv3">
+          <h1>MJ</h1>
+        </div>
+        <h3>Dr. Mike Johnson</h3>
+        <p>Pediatrics</p>
+      </div>
+      <div class="doc-num4">
+        <div class="doc-abriv4">
+          <h1>SL</h1>
+        </div>
+        <h3>Dr Sarah Lee</h3>
+        <p>Neurology</p>
+      </div>
+    </div>
+
+    <!-- doctor list end -->
+    <br /><br />
+    <!-- testimony -->
+    <div class="patient">
+      <div class="test">
+        <h3>Patient Testimonials</h3>
+      </div>
+      <div class="cont">
+        <div class="star-cont"></div>
+        <p>
+          <em
+            >"the care i recieved at HealthCare Plus was exceptional. the doctor
+            and <br />
+            staff were attentive, professional and truly cared about my
+            well-being."</em
+          >
+        </p>
+        <a href="">Emily wastson</a>
+      </div>
+    </div>
+    <!-- end testimony -->
+    <br />
+    <!-- book an Appointment -->
+    <div class="an">
+      <div class="book">
+        <h3>Book an Appointment</h3>
+      </div>
+      <form class="form" id="appointment-form">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" required />
+
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" required />
+
+        <label for="Phone">Phone:</label>
+        <input
+          type="tel"
+          id="Phone"
+          required
+          pattern="[0-9]{10}"
+          placeholder="10-digit phone number"
+        />
+
+        <label for="Message">Message:</label>
+        <textarea id="Message" required></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- start footer -->
+    <footer>
+      <p>&copy;2024 HealthCare Plus. rights reserved.</p>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>
